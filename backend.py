@@ -109,7 +109,6 @@ def color_text(text, payload):
         
         colored_text += f'<span style="{color}">{text[word]}</span> '
 
-    #print('Count: ', count['green'], 'Text length: ', l)
     if count['Green (Top 10)'] > l*2/3:
       return colored_text, pred, count
     else:
@@ -131,10 +130,4 @@ def classify_text(in_text):
   colored_text, pred, count = color_text(text, payload)
 
   return colored_text, pred, count
-
-# text = "The Israel-Gaza conflict continues to escalate, with significant developments occurring recently. The UN Security Council has adopted Resolution 2735, which proposes a comprehensive ceasefire deal aimed at ending the ongoing conflict. The resolution, supported by 14 votes with Russia abstaining, urges both Israel and Hamas to accept the terms, which include a halt to hostilities and a framework for political negotiations and humanitarian aid​."
-# colored_text, pred, count = classify_text(text)
-# print('colored_text: ', colored_text)
-# print('pred: ', pred)
-# print('count: ', count)
 
