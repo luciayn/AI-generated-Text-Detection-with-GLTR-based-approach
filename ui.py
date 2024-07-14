@@ -3,7 +3,7 @@ import pandas as pd
 from PIL import Image
 from backend import classify_text
 
-st.set_page_config(page_title="AI Detector", layout="wide")
+st.set_page_config(page_title="GLTR-based AI Text Detector", layout="wide")
 
 main_left_col, main_right_col = st.columns([0.5, 0.5], gap="large")
 
