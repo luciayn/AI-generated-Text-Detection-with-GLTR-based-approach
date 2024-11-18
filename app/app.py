@@ -1,5 +1,5 @@
 import streamlit as st
-from ui import display_ui  # Import your UI from ui.py
+from ui import display_ui
 
 # Main function to run the Streamlit app
 def main():
