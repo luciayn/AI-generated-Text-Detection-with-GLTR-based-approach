@@ -35,7 +35,7 @@ def display_ui():
                     img = img.resize((new_width, new_height))
                     st.image(img)
                 else:
-                    img = Image.open("app/  images/Generated-icon.png")
+                    img = Image.open("app/images/Generated-icon.png")
                     original_width, original_height = img.size
                     new_width = original_width // 5
                     new_height = original_height // 5
