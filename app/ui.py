@@ -28,14 +28,14 @@ def display_ui():
                 colored_text, label, count = classify_text(text)
                 st.write(f"Predicted label: ")
                 if label == "Human":
-                    img = Image.open("images/Human-icon.png")
+                    img = Image.open("app/images/Human-icon.png")
                     original_width, original_height = img.size
                     new_width = original_width // 5
                     new_height = original_height // 5
                     img = img.resize((new_width, new_height))
                     st.image(img)
                 else:
-                    img = Image.open("images/Generated-icon.png")
+                    img = Image.open("app/  images/Generated-icon.png")
                     original_width, original_height = img.size
                     new_width = original_width // 5
                     new_height = original_height // 5
